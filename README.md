@@ -34,6 +34,10 @@ repo instructions. *See "Run client" bellow also for a step by step example.*
 
         pip install -r common/requirements.txt
 
+### Add a module marker for the `biicode` folder:
+
+        touch __init__.py
+
 ### Add to python path the folder containing "biicode" folder and call *main* function from *biicode.client.shell.bii* module:
 
 
