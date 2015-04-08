@@ -196,7 +196,8 @@ class CPPTargetProcessor(object):
                 if block_cell.type == CPP:
                     # Checking lib targets src pass or not [tests] filter
                     for pattern in patterns:
-                        if fnmatch(block_cell_name.cell_name, pattern):
+                        if fnmatch(block_cell_name.cell_name, pattern) \
+                           and main.block_name == block_cell_name.block_name:
                             block_target.tests.add(main_target)
                             main_target.files.add(block_cell_name.cell_name)
                             main_target.include_paths.update(paths)
