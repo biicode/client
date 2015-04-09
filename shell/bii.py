@@ -28,9 +28,9 @@ from biicode.client.workspace.user_cache import UserCache
 class Bii(object):
     '''Entry point class for bii executable'''
 
-    def __init__(self, user_io, current_folder, user_home_folder):
+    def __init__(self, user_io, current_folder, user_biicode_folder):
         self.user_io = user_io
-        self.bii_paths = BiiPaths(current_folder, user_home_folder)
+        self.bii_paths = BiiPaths(current_folder, user_biicode_folder)
         self.user_cache = UserCache(self.bii_paths.user_bii_home)
         toolcatalog = ToolCatalog(BiiCommand, tools=[CPPToolChain,
                                                      RPiToolChain,
@@ -89,11 +89,11 @@ def run_main(args, user_io=None, current_folder=None, user_folder=None, biiapi_c
         current_folder = current_folder or os.getcwd()
         user_io = user_io or create_user_io(biicode_folder)
 
-        bii = Bii(user_io, current_folder, user_folder)
+        bii = Bii(user_io, current_folder, biicode_folder)
 
         # Update manager doesn't need proxy nor authentication to call get_server_info
         biiapi_client = biiapi_client or bii.biiapi
-        updates_manager = get_updates_manager(biiapi_client, user_folder)
+        updates_manager = get_updates_manager(biiapi_client, biicode_folder)
 
         try:  # Check for updates
             updates_manager.check_for_updates(bii.user_io.out)
