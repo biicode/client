@@ -1,0 +1,268 @@
+
+BY USING THIS SOFTWARE YOU ACCEPT ALL THE TERMS AND CONDITIONS AND PRIVACY POLICY
+
+Copyright: 2015 Biicode. All rights reserved.
+License: Limited Use Software License Agreement
+
+Legal Notice
+
+Version 1.3. Latest update 16/03/2015
+
+Biicode is a hosting service and client side software tools for software developers, made available to its users through the website biicode.com, owned by Biicode Innovation, S.L., a Spanish company with registered office in Madrid, C/ Londres 17, 2D, provided with NIF B-86441466, registered in the Registry of Madrid, sheet M-537193, volume 29855, page 87, e-mail contact [info@biicode.com].
+
+The brand Biicode and the domain name www.biicode.com are owned by Biicode Innovation, S.L.
+Biicode hosting service is provided to users, either for free, known as the "FREE" category, or by payment of a fee, the "PREMIUM" category. 
+
+Biicode Innovation, SL reserves the right to make any changes it deems appropriate on the website and update this Legal Notice, in particular to adapt it to the legislation in force at any time. Access to www.biicode.com website is subject to the conditions and limitations set forth in this Legal Notice.
+
+To sign up on the Biicode platform, prior registration of the user through the form below is necessary: [https://www.biicode.com/accounts/signup]. The use of the platform, included Biicode's client side tools, is subject to the Terms and Conditions of Use, Biicode Community Guidelines and our Privacy Policy, as may be applicable.
+
+Please notice that the source code and other files and artifacts (“content”) hosted in biicode.com may have different licenses depending on the holder of the rights, so please read their licenses before using them. Biicode shall not assume any liability based on an unauthorized use done by any user. 
+
+Violation of any of the terms below will result in the termination of your Account. While Biicode prohibits such conduct and Content on the Service, you understand and agree that Biicode cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk.
+
+This Legal Notice shall be governed by Spanish law.
+
+
+
+
+
+TERMS AND CONDITIONS OF SERVICE
+
+The present Terms and Conditions of Use govern the relationship between the users of the platform and Biicode Innovation, S.L. ("Biicode"), a Spanish company with registered office in Madrid, [C/ Londres 17, 2D 28028 Madrid], provided with NIF B-86441466, registered in the Commercial Registry of Madrid, sheet M-537193, volume 29855, page 87, e-mail address info@biicode.com. By using biicode.com, any service of Biicode or Biicode client side tools, you agree to be bound by these Terms and Conditions of Use of the service. If you accept these Terms and Conditions of Use on behalf of a legal entity, you declare that you have the sufficient faculties to legally bind the legal person and any user accessing the service through the account of such person. In such cases, the terms "you", "your " and "User" will refer to the legal person concerned and all users authorized to use that account.
+
+To use Biicode´s service prior acceptance of these Terms and Conditions of Use are required. If you do not agree with these Terms and Conditions of Use, or do not have the sufficient powers of representation to oblige the legal person who contracts the service, please do not accept these Terms and Conditions of Use and do not use the service.
+
+Any new features that enhance or modify in any manner the operation of Biicode, including the release of new tools and resources, shall be subject to the Terms and Conditions of Use applicable at all times. Continued use of the service after a modification of the Terms and Conditions of Use shall be deemed proof of your compliance with these changes.
+
+
+1. OBJECT
+
+Biicode is a hosting service and client side software tools that facilitate access to source code and other assets (“content”) hosted on the platform, the reuse of them and their integration thereof into new programs, applications, libraries or new source code. 
+
+Biicode authorizes you to use the service to store content that you have developed, or have been developed by third parties, provided that it does not involve breach of the conditions of use of that content set by the owner. The content that you store on Biicode will be accessible:
+
+(i) for any other user, in the form of the FREE category storage, or
+(ii) solely to you, as a user who is hosting it, and for users who you decide to give access, in the category PREMIUM, within the limit of number of users and user fees established in its case for the PREMIUM rate.
+
+Users who have access to hosted content can use and integrate it into their own applications or programs and/or update, adapt, transform, improve or modify it, according with the license granted by the holder of the rights for each content (MIT, Apache, EPL, Creative Commons, BSD 2-Clause, GPL etc.). 
+
+
+2. USER ACCOUNTS
+
+Use of the service must meet the following requirements:
+
+1. To use Biicode you must be over 14 years. In case you are under 18, you will need authorization from your parents or guardians;
+
+2. You must be an individual or a legal person acting through an individual. User Accounts registered by automated systems, including in particular, any viruses, worms, bots, trojans, adware and spyware are prohibited;
+
+3. You must provide your login name, a valid email address, and any other information requested to complete the registration process;
+
+4. Your login can only be used by one person. The use of a single login shared by multiple people is not allowed. 
+
+5. You are responsible for maintaining the security of your account and password. Biicode will not be liable for any loss or damage caused by the breach of this security obligation. You are responsible for providing accurate registration data and keep the User Account constantly updated.
+
+6. You are responsible for all the content posted and the activity that occurs in your account (even when Content is posted by others who have permissions under your account).
+
+7. You cannot use the service for illegal or unauthorized purposes. You agree not to violate the rules of your jurisdiction (including but not limited to copyright or trademark laws).
+Biicode may remove any User Account that does not meet any of the above requirements. Likewise, Biicode reserves the right to disable or reassign user names unsuitable to Biicode´s judgment or violate the rights of others.
+
+
+3. GENERAL CONDITIONS
+
+You agree to use the services provided by Biicode in accordance with the applicable law, these Terms and Conditions of Use and the Biicode´s Community Guidelines. You agree to make appropriate use of the website and the platform of Biicode, and not to use them to conduct illegal activities or against good faith. In particular, you agree, without this list being exhaustive, to:
+
+1. Your use of the Service is at your sole risk. The service is provided on an "as is" and "as available" basis.
+
+2. You must not modify, adapt or hack the Service or modify another website so as to falsely imply that it is associated with the Service, Biicode, or any other Biicode service.
+
+3. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service without the express written permission by Biicode.
+
+4. Support for Biicode is only available in English, via email.
+
+5. You must not damage or interfere with the functioning of the physical and logical systems of Biicode, its suppliers or third parties.
+
+6. You must not load the servers or other systems of Biicode to a disproportionate workload. If your bandwidth or storage usage significantly exceeds the average one (as determined solely by Biicode) of other Biicode users, we reserve the right to immediately disable your account or throttle your file hosting until you reduce your bandwidth usage.
+
+7. It is not allowed to access the platform by robots or other automated systems that facilitate tracking or systematic or massive download of the hosted content.
+
+8. You must not infringe intellectual property rights, industrial or legal positions of similar economic content of Biicode or other third parties.
+
+9. You must not publish on the platform code or contents of any other type of unlawful, violent, offensive, or pornographic, or that incite discrimination based on ideology, religion, creed, ethnicity, race, nation, gender, sexual orientation or identity, illness, disability or other status of a third party or are inadequate in the opinion of Biicode. You must not upload, post, host, or transmit unsolicited email, SMSs, or "spam" messages
+
+10. You must not transmit viruses, worms, bots, malware, trojans, adware and spyware, or any code of destructive nature. In this respect, the User will be liable of the content stored on the platform, so Biicode will be considered in any case as an intermediary between users.
+
+11. Biicode may, but have no obligation to, remove Content and Accounts containing Content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party's intellectual property or these Terms of Service.
+
+12. Biicode does not warrant that (i) the service will meet your specific requirements, (ii) the service will be uninterrupted, timely, secure, or error-free, (iii) the results that may be obtained from the use of the service will be accurate or reliable, (iv) the quality of any products, services, information, or other material purchased or obtained by you through the service will meet your expectations, and (v) any errors in the Service will be corrected.
+
+13. You expressly understand and agree that Biicode shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Biicode has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use the service; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the service; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third-party on the service; (v) or any other matter relating to the service.
+
+14. You understand that Biicode uses third-party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Service and that the technical processing and transmission of the Service, including your Content, may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices.
+
+15. Verbal, physical, written or other abuse (including threats of abuse or retribution) of any Biicode customer, employee, member, or officer will result in immediate account termination.
+
+
+4. APIs TERMS AND CONDITIONS
+
+Users may access Biicode data via APIs (Application Program Interfaces). Any use of the APIs, including use of the APIs through a third-party product that accesses Biicode, is bound by these Terms of Service plus the following specific terms:
+
+1. You expressly understand and agree that Biicode shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Biicode has been advised of the possibility of such damages), resulting from your use of the APIs or third-party products that access data via the APIs.
+
+2. Abuse or excessively frequent requests to Biicode via the APIs may result in the temporary or permanent suspension of your account's access to the APIs. Biicode, in its sole discretion, will determine abuse or excessive usage of the API. Biicode will make a reasonable attempt via email to warn the account owner prior to suspension.
+
+3. Biicode reserves the right at any time to modify or discontinue, temporarily or permanently, your access to the APIs (or any part thereof) with or without notice.
+
+
+5. CLIENT SIDE TOOLS TERMS AND CONDITIONS
+
+Biicode makes available to users client side tools, applications in either precompiled/ packaged form or open source code form that can be used to access Biicode service. Irrespectively of the open source software license that these tools have, their usage to access the Service is also governed by these Terms and Conditions, the Privacy Policy and the Community Guidelines.
+
+Biicode assumes no liability for data losses or damages of any nature arising out of security failures, faults or attacks of any kind to the hardware, operating systems or devices used by users of Biicode client side tools in either form. You expressly understand and agree that Biicode shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Biicode has been advised of the possibility of such damages), resulting from the usage of Biicode client side tools either in precompiled form or from open-source.
+
+Biicode is the owner of all intellectual property rights, industrial or similar legal positions of economic content on Biicode client tools. It is forbidden to copy, modify, decompile or otherwise attempt to derive the source code from the pre-compiled/packaged client tools of Biicode in whole or in part, creating derivative works or making reverse engineer of the same, except it is permitted or required by the law or authorized by Biicode in writing. Biicode open-source client tools are governed by their own accompanying open source software licenses.
+
+
+6. INTELLECTUAL PROPERTY, INDUSTRIAL AND OTHER RIGHTS
+
+We claim no intellectual property rights over the content you provide to the Service. Your profile and content uploaded remain yours. However, by using the FREE mode for your contents, you agree to allow others to view your Content. By setting your contents to be viewed publicly, you agree to allow others to view and copy your contents.
+
+The user may include with their contents in a prominent and clearly visible manner, a license explaining the main limitations or conditions of use of the content, that other users must comply with.
+
+In the event that the User does not indicate any license, default copyright laws apply, stating that the User holds all rights over the uploaded contents. However, please notice that by uploading contents to Biicode you expressly grant Biicode the right of distribution, reproduction and public communication of the contents, as established in the Intellectual Property Act (“Minimum Required License”) as this license is needed by Biicode’s platform to render its services to other users. This Minimum Required License is granted universally and for free. Please notice that Biicode just needs this license to operate the platform but no further rights are granted to Biicode or other users. 
+
+You should ensure when storing content in the platform of Biicode that you are not infringing rights of intellectual property, or any other similar rights on the content that you store in Biicode. In particular, you should ensure Biicode and other users of the platform that the storage and the use of the content that you store, whether developed by you or by third parties, does not violate applicable law or the rights of others. Please notice that you are required to indemnify Biicode and the remaining users against any third party claim arising from the violation of their rights of intellectual property or industrial, or any similar legal position of economic content, by (i) the use or exploitation of contents in accordance with its limitations of use, (ii) the use or exploitation of contents in accordance with these Terms and Conditions of Use, or (iii) the use you give to the service that breach these Terms and Conditions of Use. Also remember that you are responsible for checking if the code you intend to use includes conditions or limitations of use and, if any, you are responsible to respect them.
+
+The look and feel of the Service is copyright ©2015 Biicode. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from Biicode
+
+
+7. PREMIUM PLANS AND RATES
+
+All paid (PREMIUM) plans must enter a valid payment account. Free accounts are not required to provide payment account information. 
+
+The service may be charged in the following ways:
+
+(i) on monthly basis, in case you decide to host a given code taking advantage of one of the PREMIUM categories, or
+(ii) in advance, if you take any of periodic rates or plans that Biicode puts at your disposal.
+(iii) any other modality that Biicode offers.
+
+Different plans and rates could have associated limitations in the use of the resources of Biicode. Both the FREE and the PREMIUM category are compatible with the commercial exploitation of the programs, libraries, applications or source code you store on Biicode, provided they do not violate the applicable law or rights of third parties.
+
+1. Biicode will start to bill the PREMIUM periodic plan immediately, both for new plans and upgrades. For monthly payment plans, the Service is billed in advance on a monthly basis and is non-refundable. Each time a user expand or modify their plan, the new fee (or the difference in case of upgrades) will be automatically charged in the monthly billing cycle following that in which the plan change occurs.
+
+2. The amounts paid by the PREMIUM category, are not refundable. In no case there will be no refunds or discounts for incomplete periods, nor refunds for unused months in an open account. Neither there will be no refunds for the change of plan you choose. 
+
+3. The only exception is if you reside in a Local Country which is part of the European Union and have purchased a PREMIUM plan as an individual, you have the right to change your mind and receive a full refund within fourteen (14) days of purchase (the “Cooling-off Period”), but only if you have not logged in or otherwise redeemed or started to consume them.
+
+4. All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities, and you shall be responsible for payment of all such taxes, levies, or duties.
+
+5. In case of non-payment of fees in the PREMIUM category, Biicode can disable access to the stored private contents.
+
+6. Downgrading your Service may cause the loss of Content, features, or capacity of your Account. Biicode does not accept any liability for such loss.
+
+
+8. CONTENT REMOVAL, CANCELLATION OF THE USER ACCOUNT AND TERMINATION OF THE CONTRACT 
+
+At any time a User can erase their content stored in the platform, or cancel their User Account. The cancellation of the User Account will entail the termination of this contract.
+
+All of your Content can be deleted by Biicode from the Service upon cancellation. This information cannot be recovered once your account is cancelled. The operation of programs, application, libraries or source code based on the reuse of existing content may be affected by the subsequent elimination or cancellation of the reused content. 
+
+If you cancel the Service before the end of your current paid up month, your cancellation will take effect immediately and you will not be charged again.
+
+Biicode, in its sole discretion, has the right to suspend or terminate your account and refuse any and all current or future use of the Service, or any other Biicode service, for any reason at any time. Such termination of the Service will result in the deactivation or deletion of your Account or your access to your Account, and the forfeiture and relinquishment of all Content in your Account. Biicode reserves the right to refuse service to anyone for any reason at any time.
+
+In the event that Biicode takes action to suspend or terminate an account, we will make a reasonable effort to provide the affected account owner with a copy of their account contents upon request, unless the account was suspended or terminated due to unlawful conduct.
+
+Biicode does not monitor the content made available by you or other users. Biicode shall have the right (but not the obligation) to remove from the platform any content that is available via the service that, in its judgment, breach these Terms and Conditions of Use or the Biicode´s Community Guidelines.
+
+Biicode reserves the right to, temporarily or permanently, suspend the service or delete a User Account of those users who breach the conditions set out in these Terms and Conditions of Use or the Biicode´s Community Guidelines.
+
+
+9. MODIFICATION OF THE SERVICE AND FEES
+
+Biicode may at any time modify or discontinue, temporarily or permanently, the service (or any part thereof) with or without notice. To the extent possible, Biicode will announce the interruption or discontinuation of the service to the users in order to enable them to take the necessary steps to maintain their programs and applications running.
+
+Prices of all the services, including (but not limited to) the charges monthly PREMIUM plans, may be amended by Biicode, with 30 days prior notice to the members of the plans affected by the modification.
+
+Biicode may also modify these Terms and Conditions of Use, Community Guidelines, the Legal Notice and the Privacy Policy, whenever deemed appropriate or necessary. Where the change is substantial, or affects the PREMIUM service fees you may have hired, we will notify you by email or by notice in your User Account before the changes take effect. Continued use of the Service after these changes will mean your consent to such changes. You can review at all times the most current version of the Terms and Conditions of Use at the following address: [http://web.biicode.com/legal/terms-and-conditions/].
+
+Biicode will not be liable to you or to any third party for any modification of the service, or service content, price change, suspension or discontinuance of the Service.
+
+
+10. RESPONSIBILITY
+
+You agree to hold Biicode harmless against any claims, judicial or extrajudicial derived from your activity on the platform, in particular for publishing contents through Biicode´s platform, the misuse of the service or Biicode client side tools, contents reuse in any manner that infringes any limitations or conditions of use incorporated into the content itself, the use of the service in violation of these Terms and conditions of Use or the Biicode´s Community Guidelines, or the consequences of any disputes with other Users, except it was due to the breach of the obligations of Biicode.
+
+Biicode assumes no liability for damages of any nature arising from the use of the service or Biicode client side tools by any user, regardless of their cause, and in particular for errors or omissions, service interruptions, defects of software, transmission of viruses, worms or malicious or harmful, or content of any kind that could have published or shared the users, except for willful misconduct or gross negligence of Biicode.
+
+
+11. APPLICABLE LAW AND JURISDICTION
+
+The relationship between you, User, and Biicode will be governed by the current Spanish legislation.
+
+Any dispute arising from this agreement or related to it shall be subject to the jurisdiction of the Courts Judges of the city of Madrid, unless you are a consumer or user, in accordance with the General Law for the Protection of Consumers and Users and other complementary laws, which revised text was approved by Legislative Decree 1/2007, of November 16, and have your legal residence in Spain, in which case Biicode will be subject to the jurisdiction of the Courts and Tribunals of the city where you have your legal address.
+
+Any questions regarding the Terms and Conditions of Use should be sent to [info@biicode.com].
+
+
+
+
+
+
+
+
+
+
+
+Privacy Policy
+
+Your privacy is very important for Biicode. We invite you to spend some minutes reading this document where we describe Biicode's policy regarding personal data protection and, in particular, how Biicode processes personal information of the users of its services.
+
+
+1. GENERAL POLICY, IDENTIFICATION OF THE DATA FILES AND EXERCISE OF RIGHTS 
+
+At Biicode we care about the privacy and the protection of the personal data of our users, as well as about the respect of their intimacy. We are determined to be transparent on these subjects and to assist the claims and suggestions that we may receive from our users. If you have any question or suggestion, please write to us at info@biicode.com.
+
+The personal data provided by our users to fill out the subscription or registration forms or by using our services are processed and stored in a file controlled by Biicode Innovation, S.L.
+
+You may exercise your rights of access, rectification, erasure or objection to the processing of your personal data regarding the terms and conditions established by Spanish Law by writing to: info@biicode.com or by post to the following address: [C/ Londres 17, 2º D, 28028, Madrid]. You should attach a copy of an official identity document (Passport, D.N.I. or N.I.E.) in order to verify who you are.
+
+Currently Biicode has the following personal data file inscribed in the General Registry of the Spanish Data Protection Agency: Usuarios de servicios prestados por Biicode. Biicode Innovation, S.L. is the controller of that data file.
+Biicode has the technical and organizational measures necessary to ensure the security of the personal data and prevent its alteration, loss, unauthorized processing or access, having regard to the state of the art, the nature of the data stored and the risks they are exposed to by virtue of human action or the physical or natural environment.
+
+
+2. PURPOSES OF THE PROCESSING OF THE DATA.
+
+Biicode agrees to process the personal data provided by its users under absolute confidentiality.
+Unless the personal data collection form states otherwise, the sole purpose of such collection is to provide and maintain the services provided by Biicode, the development of new features and the improvement of the general quality of the services. Such data will not be transferred to any third party without prior authorization. In any case, Biicode will ask for your permission before using your personal data for purposes other than those established in this Privacy Policy.
+
+
+3. ACCESS LOGS
+
+By navigating through the Website, the Users provide Biicode information about their IP address (unique number used to transmit packages between devices connected to the Internet), location, date and hour of access, time spent on the Website, kind of device, operating system or browser used. In any event this information of access cannot be communicated or disclosed to any third party without your previous authorization or unless we receive a request from a competent authority, in compliance with the applicable law.
+
+Access data to the services will be stored and used with the sole purpose of supervising the service and carrying out statistics about the access of the service. In addition, the access data will be used to avoid the access to the Website or the use of the App by users who access the services through an IP that may have previously infringed the terms of our Terms and Conditions or the Community Guidelines.
+
+
+4. USE OF COOKIES
+
+In fulfilment of the provisions set forth in article 22 of the Spanish E-Commerce Act, we inform you that the Website uses or may use in the future its own cookies and third party cookies for the analysis of use of the Website and to provide the service as useful as possible. Cookies are small text files that are sent to your browser and make it possible to remember information of your previous sessions, but in any case cookies are not meant for your identification.
+
+Cookies may be used to personalize and improve the Users' experience, facilitate the use of the services, and for statistical and analytical purposes. You are able to, if you want to, configure your browser to reject the installation of these files and, if so, to remove them in case they are already installed. If you continue browsing, we will consider that you accept their use.
+
+For further information about cookies you can visit HTTP_cookie in Wikipedia.
+Biicode uses Google Analytics, which is a service provided by Google Inc., that can install cookies in your device. For further information about the features of this service, please visit this website, where Google Inc., makes available useful information, so that if you wish you can disable this service. For further technical information about this service, you can visit this site.
+
+Biicode may disclose or communicate to a third party in a future aggregated and non-personal data in order to show global trends and statistics for the general use of its services.
+
+
+5. TERMINATION OF THE SERVICE
+
+You may remove your user account at any time. This removal implies the erasure of the personal data that you may have provided to Biicode, except those data necessary for the proper functioning of Biicode, in particular the data necessary for the compliance and enforcement of the agreements that you have signed through the platform.
+The removal of your personal data when your account is disabled may not be immediate.
+
+
+6. UPDATE OF THE PRIVACY POLICY
+
+Biicode reserves the right to update this Privacy Policy at any time without prior notification and in compliance with the applicable law; you should check it regularly. Biicode will update the Privacy Policy in its own website. The continued use of the service, after the publication of any change of this Privacy Policy, implies you agree to such terms.
+
