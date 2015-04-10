@@ -18,7 +18,6 @@ BIN_DIR = 'bin'
 BII_DIR = 'bii'
 CMAKE_DIR = 'cmake'
 BII_HIVE_DB = '.hive.db'
-USER_BII_HOME = '.biicode'
 LIB_DIR = "lib"
 AUTO_ROOT_BLOCK = "auto-root-block"
 ROOT_BLOCK = "root-block"
@@ -87,17 +86,17 @@ def get_biicode_env_folder_path():
 class BiiPaths(object):
     """ Contains all the path references for a biicode running instance
     """
-    def __init__(self, current_dir, user_home):
+    def __init__(self, current_dir, user_biicode_folder):
         """ current_dir: The getcwd() of execution
         user_home: the place where the local.db cache and all the user stuff lives,
                    if None, it will be computed as os.path.expanduser("~")
         """
-        assert user_home
+        assert user_biicode_folder
         assert current_dir
         self._project_root = None  # lazy computed and cached
         self._current_layout = None  # lazy loaded from file and cached
         self._current_dir = current_dir  # The dir user runs the command from
-        self._user_home = user_home
+        self._user_home = user_biicode_folder
 
     @property
     def current_dir(self):
@@ -113,11 +112,7 @@ class BiiPaths(object):
         """ user biicode home is .biicode, is independent of project
         location
         """
-        # FIXME: Dirty hack to the problem of different origins for self._user_home
-        # Should be fixed in last commit, but to be checked
-        if os.path.basename(self._user_home) == USER_BII_HOME:
-            return self._user_home
-        return os.path.join(self._user_home, USER_BII_HOME)
+        return self._user_home
 
     @property
     def cmake_path_file(self):
