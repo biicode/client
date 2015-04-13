@@ -3,8 +3,7 @@
 ## Requirements
 
     Python 2.7
-
-    
+ 
 Install extra dependencies (Check [`requirements.txt`](requirements.txt) file) with [`pip`](https://pypi.python.org/pypi/pip) command line tool:
 
     pip install -r requirements.txt
