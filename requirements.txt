@@ -1,0 +1,6 @@
+#################CLIENT REQUIREMENTS##################
+requests==2.2.1
+colorama==0.2.7
+jinja2==2.7.2
+pyserial
+#################END CLIENT REQUIREMENTS##################
