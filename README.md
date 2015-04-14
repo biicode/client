@@ -25,7 +25,7 @@ repo instructions. *See "Run client" bellow also for a step by step example.*
 
 ### Clone [`biicode/common`](https://github.com/biicode/common) repository inside "biicode" folder:
 
-        git clone https://github.com/biicode/client.git
+        git clone https://github.com/biicode/common.git
 
 ### Install `biicode.client` dependencies
 
@@ -48,3 +48,4 @@ repo instructions. *See "Run client" bellow also for a step by step example.*
         from biicode.client.shell.bii import main
         main(sys.argv[1:])
 
+*You can also follow instructions at [`biicode/biicode`](https://github.com/biicode/biicode) main repo.*
