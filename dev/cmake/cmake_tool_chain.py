@@ -132,8 +132,9 @@ class CMakeToolChain(object):
         _ctest_command = ctest_command(paths)
         # If generator is Visual Stdio, biicode'll pass a default build config
         hive_disk_image = self.bii.hive_disk_image
-        is_visual = "Visual Studio" in hive_disk_image.settings.cmake.generator
-        build_config = '-C Debug' if is_visual and '-C' not in parameters else ''
+        generator = hive_disk_image.settings.cmake.generator
+        needs_config = "Visual Studio" in generator or "Xcode" in generator
+        build_config = '-C Debug' if needs_config and '-C' not in parameters else ''
         # By default, if user don't pass any argument, biicode'll pass --extra-verbose
         if not parameters:
             cmd = '"%s" -VV %s' % (_ctest_command, build_config)
