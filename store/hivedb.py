@@ -64,8 +64,13 @@ class HiveDB(BlobSQLite, EditionAPI):
         return self.upsert('hive_id', hive, HIVES)
 
     def upsert_edition_contents(self, contents):
+        # The hivedb actually doesnt need the serialized bytes, they will
+        # be defined the next time the source file are parsed
+        for c in contents:
+            c.load.serialize_bytes = False
         rows = [(c.ID, c) for c in contents]
-        return self.upsert_multi(rows, CONTENTS)
+        result = self.upsert_multi(rows, CONTENTS)
+        return result
 
     def delete_edition_contents(self, block_cell_names):
         result = self.delete_multi(block_cell_names, CONTENTS)
