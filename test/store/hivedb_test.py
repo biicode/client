@@ -87,7 +87,7 @@ class HiveDBTest(BiiTestCase):
         self.assertEqual(original_content, retrieved1)
         self.assertEquals(original_sha, retrieved1.sha)
 
-        original_content.load.binary = modified_load
+        original_content.load = Blob(modified_load)
         modified_sha = original_content.load.sha
 
         self.db.upsert_edition_contents([original_content])

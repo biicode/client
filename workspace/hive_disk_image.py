@@ -151,7 +151,7 @@ class HiveDiskImage(object):
         if self._bii_paths.auto_root_block:
             bii_config_path = os.path.join(self._bii_paths.project_root, "biicode.conf")
             parent = (None if not os.path.exists(bii_config_path) else
-                      BiiConfig(Blob(load(bii_config_path)).text).parent)
+                      BiiConfig(Blob(load(bii_config_path)).bytes).parent)
             if parent:
                 project_block = parent.block_name
             else:  # Get the root block name from user + folder
