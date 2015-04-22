@@ -176,7 +176,7 @@ class ClientHiveManager(HiveManager):
         self._process()
         parents = [b.parent for b in self.hive_holder.block_holders if b.parent.time != -1]
         self.bii.biiapi.check_valid(parents, publish=False)
-        block = super(ClientHiveManager, self).update(block, time)
+        block = super(ClientHiveManager, self).update(self.hive_disk_image.settings, block, time)
         self._checkout(allow_delete_block=block)
         self._checkout_deps()
 
