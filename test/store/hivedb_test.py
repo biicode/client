@@ -6,7 +6,6 @@ from biicode.common.model.brl.block_cell_name import BlockCellName
 from unittest import main
 from biicode.common.model.bii_type import CPP
 from biicode.common.test.conf import BII_TEST_FOLDER
-from biicode.common.edition.hive import Hive
 from biicode.common.test import testfileutils as TestFileUtils
 from biicode.common.test import model_creator as mother
 from nose.plugins.attrib import attr
@@ -45,7 +44,7 @@ class HiveDBTest(BiiTestCase):
             contents.append(Content(id_=rid, load=Blob("Hola")))
 
         self.db.upsert_edition_contents(contents)
-        retrieved = self.db.read_edition_contents(ids)
+        retrieved = self.db.read_edition_contents()
         self.assertEquals(num_cells, len(retrieved))
         for _, cell in retrieved.iteritems():
             cell.type = CPP
@@ -53,17 +52,17 @@ class HiveDBTest(BiiTestCase):
         self.db.upsert_edition_contents(retrieved.values())
         #print time.time() - start_time
         #start_time = time.time()
-        retrieved = self.db.read_edition_contents(ids)
+        retrieved = self.db.read_edition_contents()
         #print time.time() - start_time
         #start_time = time.time()
         self.assertEquals(num_cells, len(retrieved))
         self.db.delete_edition_contents(ids)
         #print time.time() - start_time
         #start_time = time.time()
-        retrieved = self.db.read_edition_contents(ids)
+        retrieved = self.db.read_edition_contents()
         #print time.time() - start_time
         #start_time = time.time()
-        '''Recall that read_multi retrieve a dict, missing keys if not found'''
+        '''Recall that read_all retrieve a dict, missing keys if not found'''
         self.assertEquals(0, len(retrieved))
 
     def test_rw_multi_contents(self):
@@ -73,7 +72,7 @@ class HiveDBTest(BiiTestCase):
         cell2 = mother.make_content(rid2)
 
         self.db.upsert_edition_contents([cell1, cell2])
-        retrieved1 = self.db.read_edition_contents([rid1, rid2])
+        retrieved1 = self.db.read_edition_contents()
         self.assertEquals({rid1: cell1, rid2: cell2}, retrieved1)
 
     def testStoreContent(self):
@@ -83,22 +82,16 @@ class HiveDBTest(BiiTestCase):
         original_sha = original_content.load.sha
 
         self.db.upsert_edition_contents([original_content])
-        retrieved1 = self.db.read_edition_contents([cid])[cid]
+        retrieved1 = self.db.read_edition_contents()[cid]
         self.assertEqual(original_content, retrieved1)
         self.assertEquals(original_sha, retrieved1.sha)
 
-        original_content.load = Blob(modified_load)
+        original_content.set_blob(Blob(modified_load))
         modified_sha = original_content.load.sha
 
         self.db.upsert_edition_contents([original_content])
-        retrieved2 = self.db.read_edition_contents([cid])[cid]
+        retrieved2 = self.db.read_edition_contents()[cid]
         self.assertEquals(modified_sha, retrieved2.sha)
-
-    def test_store_hive(self):
-        hive = Hive()
-        self.db.upsert_hive(hive)
-        retrieved = self.db.read_hive()
-        self.assert_bii_equal(hive, retrieved)
 
     def testdelete_content(self):
         TestFileUtils.load("geom/main.cpp")
@@ -108,7 +101,7 @@ class HiveDBTest(BiiTestCase):
         self.db.upsert_edition_contents([content])
         self.db.delete_edition_contents([cid])
         with self.assertRaises(KeyError):
-            self.db.read_edition_contents([cid])[cid]
+            self.db.read_edition_contents()[cid]
 
 
 if __name__ == "__main__":
