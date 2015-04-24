@@ -17,7 +17,9 @@ def compute_files(hive_holder, output, settings):
                 output.error("Error evaluating virtual %s: %s" % (block_cell_name, e.message))
                 continue
             content = hive_holder[target.block_name][target.cell_name].content
-        new_files[block_cell_name] = content.load.load
+            new_files[block_cell_name] = content.load.load
+        elif content.blob_updated:
+            new_files[block_cell_name] = content.load.load
 
     return new_files
 

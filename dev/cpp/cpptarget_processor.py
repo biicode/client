@@ -30,9 +30,9 @@ class CPPTargetProcessor(object):
             resources[block_cell_name] = resource
 
         # Compute the targets, high level
-        mains = compute_mains(hive_holder.hive.settings, resources, self.user_io.out)
+        mains = compute_mains(hive_holder.settings, resources, self.user_io.out)
         block_targets = self._define_targets(mains, resources, test_patterns,
-                                             hive_holder.hive.settings)
+                                             hive_holder.settings)
         self._order_include_paths(block_targets, hive_holder)
         self._define_system_includes(block_targets, mains)
         self._mark_deps(block_targets, hive_holder)

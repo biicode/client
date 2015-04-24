@@ -54,14 +54,6 @@ class SQLiteDB(object):
         c.executemany(query, serial_rows)
         self.connection.commit()
 
-    def _chunks(self, itemlist, max_size=999):
-        """ Yield successive n-sized chunks from l.
-        """
-        if not isinstance(itemlist, list):
-            itemlist = list(itemlist)
-        for i in xrange(0, len(itemlist), max_size):
-            yield itemlist[i:i + max_size]
-
     def delete(self, ID, table):
         statement = self.connection.cursor()
         command = 'DELETE from %s where id=(?)' % table

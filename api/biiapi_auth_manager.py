@@ -154,10 +154,6 @@ class BiiApiAuthManager(BiiAPI):
         return self.rest_client.upload(brl_hive, upload_pack)
 
     @input_credentials_if_unauthorized
-    def read_edition_contents(self, brl_hive, block_cell_names):
-        return self.rest_client.read_edition_contents(brl_hive, block_cell_names)
-
-    @input_credentials_if_unauthorized
     def get_server_info(self):
         return self.rest_client.get_server_info()
 

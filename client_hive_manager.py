@@ -3,7 +3,6 @@ from biicode.client.exception import ConnectionErrorException, ClientException, 
 from biicode.client.checkout.snapshotbuilder import compute_files, compute_deps_files
 from biicode.common.exception import BiiException
 from biicode.client.command.printers.command_printer import Printer
-from biicode.common.edition.hive import Hive
 from biicode.common.utils.bii_logging import logger
 from biicode.client.hooks import handle_hooks
 import traceback
@@ -50,8 +49,7 @@ def init_hive(bii, project_name=None, layout=None):
     hive_disk_image.initialize()
 
     try:
-        hive = Hive()
-        hive_disk_image.hivedb.upsert_hive(hive)
+        hive_disk_image.hivedb.read_edition_contents()
         out.success('Successfully initialized biicode project %s' % (project_name or ""))
     # If an exception is launched, the hive folder is deleted
     except BaseException as e:
@@ -108,14 +106,13 @@ class ClientHiveManager(HiveManager):
         Params:
             delete: BlockName or None
                     if BlockName it will delete that block_name
-        '''
-        settings = self.hive_disk_image.settings
-        new_files = compute_files(self.hive_holder, self.user_io.out, settings)
+        ''' 
         if allow_delete_block:
-            self.hive_disk_image.delete_removed(SRC_DIR, new_files,
+            self.hive_disk_image.delete_removed(SRC_DIR, self.hive_holder.resources,
                                                 block_filter=allow_delete_block)
-
-        self.hive_disk_image.save(SRC_DIR, new_files)
+        settings = self.hive_disk_image.settings
+        update_files = compute_files(self.hive_holder, self.user_io.out, settings)
+        self.hive_disk_image.save(SRC_DIR, update_files)
 
     def _checkout_deps(self):
         if self.closure is not None:
