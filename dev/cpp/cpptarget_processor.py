@@ -30,9 +30,9 @@ class CPPTargetProcessor(object):
             resources[block_cell_name] = resource
 
         # Compute the targets, high level
-        mains = compute_mains(hive_holder.hive.settings, resources, self.user_io.out)
+        mains = compute_mains(hive_holder.settings, resources, self.user_io.out)
         block_targets = self._define_targets(mains, resources, test_patterns,
-                                             hive_holder.hive.settings)
+                                             hive_holder.settings)
         self._order_include_paths(block_targets, hive_holder)
         self._define_system_includes(block_targets, mains)
         self._mark_deps(block_targets, hive_holder)
@@ -45,7 +45,7 @@ class CPPTargetProcessor(object):
         """ The targets must be ordered by level to the PRE_BUILD_STEP. If executed in
         order, downstream targets settings execute later and thus have priority
         """
-        graph = self.client_hive_manager.hive.hive_dependencies.version_graph
+        graph = self.client_hive_manager.hive_holder.hive_dependencies.version_graph
         levels = graph.get_levels()
         ordered_targets = OrderedDict()
         for level in levels:
@@ -69,7 +69,7 @@ class CPPTargetProcessor(object):
 
     def _mark_deps(self, block_targets, hive_holder):
         # Mark as in "deps" or not
-        hive_dependencies = hive_holder.hive.hive_dependencies
+        hive_dependencies = hive_holder.hive_dependencies
         for v in hive_dependencies.dep_graph.nodes:
             if v.block_name in block_targets:
                 block_targets[v.block_name].is_dep = True

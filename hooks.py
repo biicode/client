@@ -95,7 +95,7 @@ def handle_hooks(stage, hive_holder, closure, bii):
     hook_pattern = "bii*%s*hook.py" % stage
 
     #hooks must be executed also in order
-    levels = hive_holder.hive.hive_dependencies.version_graph.get_levels()
+    levels = hive_holder.hive_dependencies.version_graph.get_levels()
     list_blocks = [bv.block_name for level in levels for bv in level]
     _process_deps_hooks(closure, bii, hook_pattern, list_blocks)
     _process_blocks_hooks(hive_holder, bii, hook_pattern, list_blocks)

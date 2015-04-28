@@ -34,19 +34,17 @@ class BlobSQLite(SQLiteDB):
             raise NotInStoreException('Not found %s in %s' % (ID, table))
         return item
 
-    def read_multi(self, ids, table, deserializer):
+    def read_all(self, table, deserializer):
         result = {}
-        for chunked_ids in self._chunks(ids):
-            query = "SELECT blob FROM %s WHERE id in (%s)" % (table,
-                                        ', '.join(['?'] * len(chunked_ids)))
-            c = self.connection.cursor()
-            c.execute(query, list(chunked_ids))
-            rss = c.fetchall()
-            for rs in rss:
-                data = decode_serialized_value(rs[0])  # dict repr() to dict
-                item = deserializer.deserialize(data)
-                if item:
-                    result[item.ID] = item
+        query = "SELECT blob FROM %s" % table
+        c = self.connection.cursor()
+        c.execute(query)
+        rss = c.fetchall()
+        for rs in rss:
+            data = decode_serialized_value(rs[0])  # dict repr() to dict
+            item = deserializer.deserialize(data)
+            if item:
+                result[item.ID] = item
         return result
 
     def create(self, ID, value, table):

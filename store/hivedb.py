@@ -3,7 +3,6 @@ import os
 from biicode.client.exception import ClientException
 from biicode.common.model.content import ContentDeserializer
 from biicode.common.api.edition_api import EditionAPI
-from biicode.common.edition.hive import Hive
 from biicode.client.store.sqlite import SQLiteDB
 from biicode.client.migrations.migrations import get_client_migrations
 from biicode.common.migrations.migration import Migration
@@ -29,9 +28,7 @@ def factory(dbpath):
         logger.error(e)
         raise ClientException("Could not initialize local cache", e)
 
-CELLS = "cells"
 CONTENTS = "contents"
-HIVES = "hives"
 VERSION = "client_version"
 
 
@@ -44,8 +41,6 @@ class HiveDB(BlobSQLite, EditionAPI):
         try:
             SQLiteDB.init(self)
             statement = self.connection.cursor()
-            self.create_table(statement, HIVES)
-            self.create_table(statement, CELLS)
             self.create_table(statement, CONTENTS)
             self.create_table(statement, VERSION)
             # Last migrated version is last migration available
@@ -54,18 +49,17 @@ class HiveDB(BlobSQLite, EditionAPI):
         except Exception as e:
             raise ClientException("Could not initalize local cache", e)
 
-    def read_hive(self):
-        return self.read('hive_id', HIVES, Hive)
-
-    def read_edition_contents(self, block_cell_names):
-        return self.read_multi(block_cell_names, CONTENTS, ContentDeserializer(BlockCellName))
-
-    def upsert_hive(self, hive):
-        return self.upsert('hive_id', hive, HIVES)
+    def read_edition_contents(self):
+        return self.read_all(CONTENTS, ContentDeserializer(BlockCellName))
 
     def upsert_edition_contents(self, contents):
+        # The hivedb actually doesnt need the serialized bytes, they will
+        # be defined the next time the source file are parsed
+        for c in contents:
+            c.load.serialize_bytes = False
         rows = [(c.ID, c) for c in contents]
-        return self.upsert_multi(rows, CONTENTS)
+        result = self.upsert_multi(rows, CONTENTS)
+        return result
 
     def delete_edition_contents(self, block_cell_names):
         result = self.delete_multi(block_cell_names, CONTENTS)
@@ -79,7 +73,5 @@ class HiveDB(BlobSQLite, EditionAPI):
         return self.read('last_migrated', VERSION, Migration)
 
     def clean(self):
-        self.delete_all(CELLS)
         self.delete_all(CONTENTS)
-        self.upsert_hive(Hive())
         self.vacuum()
