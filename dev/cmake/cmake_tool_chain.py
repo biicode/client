@@ -36,11 +36,14 @@ class CMakeToolChain(object):
         '''
         parser = argparse.ArgumentParser(description=self.build.__doc__,
                                          prog="bii %s:build" % self.group)
-        parser.parse_known_args(*parameters)
+        parser.add_argument('-q', "--quick", default=False, action='store_true',
+                            help='Run a build, without configuration')
+        args, unknown = parser.parse_known_args(*parameters)
 
-        self._configure(force=False, generator=None,
-                        toolchain=KEEP_CURRENT_TOOLCHAIN, parameters=[])
-        self._build(*parameters)
+        if not args.quick:
+            self._configure(force=False, generator=None,
+                            toolchain=KEEP_CURRENT_TOOLCHAIN, parameters=[])
+        self._build(unknown)
 
     def _build(self, *parameters):
         paths_to_add = self.prepare_build_path()
@@ -54,7 +57,10 @@ class CMakeToolChain(object):
             # Necessary for building in windows (cygwin in path)
             cmd = '"%s" --build . %s' % (cmake_command(paths), build_options)
             self.bii.user_io.out.write('Building: %s\n' % cmd)
-            retcode = simple_exe(cmd, cwd=paths.build)
+            try:
+                retcode = simple_exe(cmd, cwd=paths.build)
+            except Exception as e:
+                raise BiiException("Build failed: %s\n\nTry configure the project again" % str(e))
             if retcode != 0:
                 raise BiiException('Build failed')
 
