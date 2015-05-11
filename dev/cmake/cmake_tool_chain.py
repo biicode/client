@@ -57,7 +57,7 @@ class CMakeToolChain(object):
             self.bii.user_io.out.write('Building: %s\n' % cmd)
             retcode = simple_exe(cmd, cwd=paths.build)
             if 'Eclipse' in self.bii.hive_disk_image.settings.cmake.generator:
-                ide = Eclipse(self.bii_paths)
+                ide = Eclipse(paths)
                 try:
                     ide.configure_project()
                 except IOError:
