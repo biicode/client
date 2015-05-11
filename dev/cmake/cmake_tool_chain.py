@@ -7,6 +7,7 @@ from biicode.client.client_hive_manager import ClientHiveManager
 import platform
 from biicode.client.command.context_manager import CustomEnvPath
 import re
+from biicode.client.wizards.eclipse import Eclipse
 
 
 class CMakeToolChain(object):
@@ -55,6 +56,12 @@ class CMakeToolChain(object):
             cmd = '"%s" --build . %s' % (cmake_command(paths), build_options)
             self.bii.user_io.out.write('Building: %s\n' % cmd)
             retcode = simple_exe(cmd, cwd=paths.build)
+            if 'Eclipse' in self.bii.hive_disk_image.settings.cmake.generator:
+                ide = Eclipse(self.bii_paths)
+                try:
+                    ide.configure_project()
+                except IOError:
+                    pass
             if retcode != 0:
                 raise BiiException('Build failed')
 

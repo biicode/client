@@ -65,15 +65,6 @@ class CMakeTool(object):
         if self._create_cmakelists(block_targets) or force:
             self._generate_project(toolchain_file, parameters)
 
-        if 'Eclipse' in self.hive_disk_image.settings.cmake.generator:
-            ide = Eclipse(self.bii_paths)
-            ide.configure_project()
-            if generator:
-                self.user_io.out.success('Eclipse project in %s\n'
-                                         'Open eclipse, select "File > Import > General > '
-                                         'Existing project into Workspace" '
-                                         'and select folder\n' % self.bii_paths.project_root)
-
     @abstractmethod
     def _create_cmakelists(self, targets):
         '''Must return TRUE if the file is actually created or modified'''
@@ -179,3 +170,11 @@ class CMakeTool(object):
         if retcode != 0:
             logger.error(cmake_output)
             raise BiiException('CMake failed')
+
+        if 'Eclipse' in self.hive_disk_image.settings.cmake.generator:
+            ide = Eclipse(self.bii_paths)
+            ide.configure_project()
+            self.user_io.out.success('Eclipse project in %s\n'
+                                     'Open eclipse, select "File > Import > General > '
+                                     'Existing project into Workspace" '
+                                     'and select folder\n' % self.bii_paths.project_root)
