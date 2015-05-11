@@ -134,6 +134,13 @@ class CMakeTool(object):
                     settings.cmake.generator = "Unix Makefiles"
                 hive_disk_image.settings = settings
 
+        if 'Eclipse' in settings.cmake.generator:
+            ide = Eclipse(self.bii_paths)
+            try:
+                ide.configure_project()
+            except IOError:
+                pass
+
     def _generate_project(self, toolchain_file, parameters):
         '''runs CMake to generate Makefiles or Project'''
         # Obtain generator
@@ -170,6 +177,7 @@ class CMakeTool(object):
         if retcode != 0:
             logger.error(cmake_output)
             raise BiiException('CMake failed')
+
         if 'Eclipse' in generator:
             ide = Eclipse(self.bii_paths)
             ide.configure_project()
