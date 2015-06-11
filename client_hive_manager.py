@@ -1,4 +1,4 @@
-from biicode.common.edition.hive_manager import HiveManager
+from biicode.common.edition.project_manager import ProjectManager
 from biicode.client.exception import ConnectionErrorException, ClientException, NotInAHiveException
 from biicode.client.checkout.snapshotbuilder import compute_files, compute_deps_files
 from biicode.common.exception import BiiException
@@ -64,7 +64,7 @@ def init_hive(bii, project_name=None, layout=None):
             save(os.path.join(hive_disk_image.paths.bii, "layout.bii"), layout_content)
 
 
-class ClientHiveManager(HiveManager):
+class ClientHiveManager(ProjectManager):
     """ The main entry point for business logic in client
     """
     def __init__(self, bii):
@@ -153,7 +153,7 @@ class ClientHiveManager(HiveManager):
         parents = [b.parent for b in self.hive_holder.block_holders if b.parent.time != -1]
         self.bii.biiapi.check_valid(parents)
 
-        HiveManager.publish(self, block_name, tag, msg, versiontag,
+        ProjectManager.publish(self, block_name, tag, msg, versiontag,
                             publish_all=publish_all, origin=origin)
         self._checkout()
         # Check again, in case some parent outdated DEV => STABLE
@@ -186,7 +186,7 @@ class ClientHiveManager(HiveManager):
             block_version. It time is None last version will be retrieved
         '''
         self._process()
-        opened_version = HiveManager.open(self, block_name, track, time, version_tag)
+        opened_version = ProjectManager.open(self, block_name, track, time, version_tag)
         self._checkout()
         self._checkout_deps()
         if os.path.exists(os.path.join(self.hive_disk_image.paths.deps, block_name)):
@@ -198,7 +198,7 @@ class ClientHiveManager(HiveManager):
 
     def close(self, block_name, force):
         self._process()
-        HiveManager.close(self, block_name, self.hive_disk_image.settings, force)
+        ProjectManager.close(self, block_name, self.hive_disk_image.settings, force)
         self._checkout(allow_delete_block=block_name)
         self._checkout_deps()  # When closing a block we might have less dependencies
         if os.path.exists(os.path.join(self.hive_disk_image.paths.blocks, block_name)):
